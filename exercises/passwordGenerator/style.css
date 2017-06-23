@@ -1,0 +1,16 @@
+body{
+    font-family: Monaco;
+    background-color: #acd3cd;
+}
+
+.header{
+    padding-bottom: 50px;
+}
+
+.works{
+    padding-bottom: 50px;
+}
+
+.result{
+    font-size: 25px;
+}

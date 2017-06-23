@@ -1,0 +1,50 @@
+
+{
+    "breakfast": [{
+        "meat": true,
+        "name": "Carnivor",
+        "ing": ["cheese", "egg", "bacon", "ham", "sasage", "croissant"]
+    },
+    {
+        "meat": false,
+        "name": "Herbavor",
+        "ing": ["avocado", "tofu", "spinach", "onion", "bun"]
+    },
+    {
+        "meat": true,
+        "name": "Omnivor",
+        "ing": ["cheese", "egg", "avodado", "ham", "9-grain"]
+    }],
+    "lunch": [{
+        "meat": true,
+        "name": "Carnivor",
+        "ing": ["Gouda", "Turkey", "bacon", "ham", "bun"]
+    },
+    {
+        "meat": false,
+        "name": "Herbavor",
+        "ing": ["avocado", "veggie-patty", "spinach", "onion", "toamto", "bun", "sprouts"]
+    },
+    {
+        "meat": true,
+        "name": "Omnivor",
+        "ing": ["cheddar", "ham", "avodado", "tomato", "9-grain", "sprouts"]
+    }],
+    "dinner": [{
+        "meat": true,
+        "name": "Carnivor",
+        "ing": ["Steak", "potatoes", "beer"]
+    },
+    {
+        "meat": false,
+        "name": "Herbavor",
+        "ing": ["avocado", "Blackbean Burger", "spinach", "onion", "bun"]
+    },
+    {
+        "meat": true,
+        "name": "Omnivor",
+        "ing": ["Salmon", "Green Beans", "Potates"]
+    }]
+}
+                  
+                  

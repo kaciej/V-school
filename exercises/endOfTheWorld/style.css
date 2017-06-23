@@ -1,0 +1,18 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first-message{
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+#timer{
+    font-size: 70px;
+}
+
+.end-message{
+    margin-top: 60px;
+    font-size: 150px;
+}

@@ -1,0 +1,32 @@
+.box {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.light-pink {
+    background-color: #F5C6D6;
+}
+
+.hot-pink {
+    background-color: #EE2E84;
+}
+
+.light-blue {
+    background-color: #85CFD8;
+}
+
+.green {
+    background-color: #8DC63F;
+}
+
+.orange {
+    background-color: #E76E34;
+    height: 5vh;
+}
+
+.purple{
+    background-color: purple;
+    height: 5vh;
+}

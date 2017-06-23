@@ -1,0 +1,46 @@
+.header{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    background-color: yellow;
+    color: red;
+    
+}
+
+.body{
+    width: 100%;
+    height: 55vh;
+    background-color: red;
+}
+
+.about-me{
+    color:red;
+    font-size: 40px;
+}
+
+p{
+    color: red;
+    font-size: 2.5vh;
+    padding-top: 15px;
+}
+
+.luigijump {
+    padding-top: 50px;
+}
+
+.footer-custom{
+    width: 100%;
+    background-color: yellow;
+    text-align: right;
+}
+
+.shroom{
+    height: 10vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+body{
+    font-family: SuperMarioGalaxy;
+}

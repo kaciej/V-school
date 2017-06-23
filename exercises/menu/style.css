@@ -1,0 +1,42 @@
+body {
+    background-image: url("http://cdn.skim.gs/images/zkbz7yylrml55kwjbgnz/baking-without-eggs");
+    background-size: cover;
+    background-repeat: none;
+}
+
+.content {
+    background: rgba(66, 66, 66, 0.7);
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.title {
+    color: cadetblue;
+    font-size: 60px;
+    font-family: DK Lemon Yellow Sun;
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color: ghostwhite;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.name {
+    color: coral;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.menu-item {
+    color: whitesmoke;
+}
+
+.menu-img {
+    width: 300px;
+    border-radius: 10px;
+    height: 30vh;
+}

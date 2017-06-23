@@ -1,0 +1,58 @@
+
+
+.orangeBox {
+    display: inline;
+    height: 35vh;
+    width: 40%;
+    background: orange;
+    position: absolute;
+    margin-top: 50px;
+    border-radius: 100%;
+}
+
+.whiteCircle1 {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    border: 3px solid black;
+    left: 25%;
+    margin-left: -25px;
+    top: 30px;
+    background: white;
+}
+
+.whiteCircle2 {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    border: 3px solid black;
+    left: 75%;
+    margin-left: -25px;
+    top: 30px;
+    background: white;
+}
+
+.pupil {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    border: 3px solid black;
+    left: 25%;
+    top: 10px;
+    background: black;
+}
+
+.smile {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    height: 110px;
+    width: 135px;
+    margin: 0 auto;
+    border-bottom: 8px solid black;
+    border-radius: 75%;
+}
