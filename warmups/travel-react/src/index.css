@@ -1,0 +1,29 @@
+body{
+    background-color: #1F2833;
+}
+
+.site-circle{
+    height: 250px;
+    width:250px;
+    border-radius: 50%;
+    background-image: center;
+    background-position: center;
+    background-size: cover;
+    border: solid white 5px;
+    margin: 20px;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 100px;
+    color: whitesmoke;
+    text-shadow: 2px 2px #ff0000;
+}
+
+.header{
+    color: #F3351B;
+    margin-bottom: 50px;
+    background-image: url("/images/travel-bcakground.jpg");
+    height: 20vh;
+}
+

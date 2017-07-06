@@ -1,0 +1,109 @@
+.navbar{
+background-color: #e05038;
+margin-bottom: 0;
+border-bottom: transparent;
+font-family: 'Francois One', sans-serif;
+
+}
+
+.navbar a {
+color: white !important;
+font-size: 16px;
+padding-left: 40px;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-brand {
+    font-size: 54px;
+    font-weight: bolder;
+    line-height: 8vh;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav li {
+    text-align: right;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-collapse  {
+    text-align: right;
+    z-index: 1;
+  }
+}
+
+.navbar-nav{
+    text-align: center;
+}
+
+.navbar-collapse {
+    border-top: transparent !important;
+}
+
+.header{
+    padding-top: 70px;
+    text-align: center;
+    font-size: 52px;
+    background-color: #394452;
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bolder;
+}
+
+.img {
+width: 100%;
+height: 30vh;
+border-radius: 6px;
+background-size: cover;
+background-image: center;
+border: solid 3px white;
+z-index: 0
+}
+
+
+.body{
+    background-color: #1F2833;
+    color: white;
+    font-family: 'Francois One', sans-serif;
+    font-weight: bold;
+}
+
+.quote-btn {
+background-color: transparent;
+border: solid 2px white;
+color: #e05038;
+font-size: 18px;
+text-align: center;
+border-radius: 6px;
+}
+
+
+.box {
+    padding: 30px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+footer{
+    background-color: #1F2833;
+    padding: 20px;
+    text-align: center;
+}
+
+.icons{
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+

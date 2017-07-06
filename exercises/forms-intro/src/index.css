@@ -1,0 +1,24 @@
+ul{
+    list-style-type: none;
+}
+
+header{
+    text-align: center;
+    background-color: #1976D2;
+    height: 40vh;
+    margin-top: 0;
+    
+}
+
+h2{
+    margin-top: 0;
+    padding-top: 110px;
+    font-size: 60px;
+}
+
+button {
+    margin-left: 20px;
+    border-radius: 6px;
+    color: white;
+    background-color: #00C853
+}
