@@ -29,6 +29,15 @@ class BadgeContainer extends React.Component {
         this.setState({
             ...this.state,
             badges: [...this.state.badges, newBadge],
+            inputValue: {
+                firstName: "",
+                lastName: "",
+                email: "",
+                phone: "",
+                favFood: "",
+                placeOfBirth: "",
+                tellUsMore: ""
+            }
         })
     }
     render() {
