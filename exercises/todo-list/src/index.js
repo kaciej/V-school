@@ -1,8 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css"
+//import components
+import ToDoContainer from "./containers/toDo-container.js";
+import Header from "./components/header.js";
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+class App extends React.Component {
+    render() {
+        return (
+            <div>
+                <Header/>
+                <ToDoContainer/>
+            </div>
+        )
+    }
+}
+
+ReactDOM.render(
+    <App/>, document.querySelector("#root"));

@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+}
+
+.box{
+    height: 30vh;
+    width: 300px;
+    background-color: blue;
+    margin: auto;
+}
+
+button{
+    
+}

@@ -1,5 +1,82 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+body{
+    background-image: url("/images/Chalkboard.jpg");
+    color: #F5F5F5;
+    font-family: 'Gloria Hallelujah', cursive;
+
+}
+
+header{
+margin-bottom: 60px;
+margin-top: 40px;
+}
+
+h3{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+button{ 
+    border-radius: 5px;
+    margin-left: 20px;
+    font-weight: bolder;
+}
+
+.doButton{
+   color: blue;
+    background-color: yellow;
+}
+
+.item{
+    vertical-align: center !important;
+}
+
+.didButton{
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    margin-right: 18px;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.edit-btn{
+   margin-right: 18px;
+}
+
+.addlist{
+    border-radius: 5px;
+    color: black;
+    height: 30px;
+    width: 300px;
+    font-weight: bolder;
+    font-family: 'Cabin', sans-serif !important;
+    font-size: 24px;
+    
+}
+
+ul{
+    font-family: 'Cabin', sans-serif !important;
+    font-size: 24px;
+    list-style-type: decimal;
+    float: left;
+    text-align: left;
+}
+
+.list-text{
+    font-size: 24px;
+}
+
+.editbox{
+    margin-left: 18px;
+    border-radius: 5px;
+    color: black;
+}
+
+.save{
+     color: white;
+    background-color: transparent;
+    border-color: white;
+    margin-right: 18px;
+    font-size: 18px;
+    margin-top: 0; 
 }

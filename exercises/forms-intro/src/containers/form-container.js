@@ -38,7 +38,7 @@ class FormContainer extends React.Component{
         return (
             <div className="container">
                 <div className="row">
-            <Form handleRemove={this.remove} brand="If you would like to continue to drink clean water enter  YOUR NAME" names={this.state.names} handleClicked={this.clicked} handleInput={this.input} nameValue={this.state.nameValue} />
+            <Form handleRemove={this.remove} names={this.state.names} handleClicked={this.clicked} handleInput={this.input} nameValue={this.state.nameValue} brand="If you would like to continue to drink clean water enter  YOUR NAME"/>
                </div>
             </div>
         )

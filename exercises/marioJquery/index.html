@@ -1,0 +1,78 @@
+<!--https://coursework.vschool.io/goomba-pest-control/-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="navbar-header">
+                    <img class="super-mario-pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Mario_Series_Logo.svg/1200px-Mario_Series_Logo.svg.png">
+                    <a class="navbar-brand" href="#">Pest Control</a>
+                </div>
+            </div>
+            <div class="row totals-row">
+                <div class="col-md-6 totals">
+                    <span class="total-baddies-text">Baddies Caught:</span>
+                    <span class="total-baddies-amount"></span>
+                </div>
+                <div class="col-md-6 totals">
+                    <span class="total-price-text">Bill:</span>
+                    <span class="total-price-amount"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid main-body">
+        <div class="row">
+            <div class="col-md-4 text-center boxes">
+                <div class="badguy-border">
+                    <div class="title">Goombas</div>
+                    <img class="goombas-img" src="http://vignette3.wikia.nocookie.net/nintendo/images/d/d5/GoombaNSMB.png/revision/latest?cb=20110724131649&path-prefix=en">
+                    <div class="info">
+                        <div class="price goombas-price">PRICE: 12</div>
+                        <span class="caught">CAUGHT:</span>
+                        <input class="input goombas-input" type="number">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center boxes">
+                <div class="badguy-border">
+                    <div class="title">Bob-ohms</div>
+                    <img class="bob-img" src="http://vignette3.wikia.nocookie.net/fantendo/images/c/c2/Bob-omb_Buddy_walking.png/revision/latest?cb=20120214004848">
+                    <div class="info">
+                        <div class="price bob-ohms-price">PRICE: 8</div>
+                        <span class="caught">CAUGHT:</span>
+                        <input class="input bob-ohms-input" type="number">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center boxes">
+                <div class="badguy-border">
+                    <div class="title">Cheep Cheep</div>
+                    <img class="cheep-cheep-img" src="https://www.mariowiki.com/images/thumb/3/38/DeepCheepNSLU.png/200px-DeepCheepNSLU.png">
+                    <div class="info">
+                        <div class="price cheep-cheep-price">PRICE: 5</div>
+                        <span class="caught">CAUGHT:</span>
+                        <input class="input cheep-cheep-input" type="number">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+   <script src="script.js"></script>
+</body>
+
+</html>

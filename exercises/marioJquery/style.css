@@ -1,0 +1,98 @@
+body {
+    background-image: url(http://oi58.tinypic.com/2j1sbbm.jpg);
+    font-family: SuperMarioGalaxy;
+}
+
+.navbar-custom{
+    background-color: black;
+    padding-bottom: 10px;
+}
+
+.super-mario-pic{
+    height: 100px;
+    float: left;
+    margin-top: 20px;
+}
+
+.navbar-brand{
+    font-size: 60px; 
+}
+
+.navbar-header a{
+    color: red !important;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.title {
+    font-size: 40px;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: 4px solid black;
+    width: 90px;
+    border-radius: 15px;
+}
+
+.totals-row{
+    padding-left: 250px;
+}
+
+.totals {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 35px;
+    color: red;
+}
+
+.info {
+    font-size: 20px;
+}
+
+.badguy-border {
+    background-color: rgba(201, 201, 159, 0.3);
+    border-radius: 25px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.bob-img{
+    height: 245px;
+    padding-bottom: 40px;
+}
+
+.goombas-img{
+    padding-bottom: 15px;
+}
+
+.cheep-cheep-img{
+    height: 250px;
+    padding-bottom: 45px;
+}
+
+.main-body{
+    margin-top: 225px;
+}
+
+footer {
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: red;
+    display: inline-block;
+}
+
+.footer-list{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.footer-info{
+    font-size: 17px;
+    font-family: monospace !important;
+}
