@@ -1,0 +1,71 @@
+body{
+    background-color: black;
+}
+
+.wrapper{
+    height: 90vh;
+}
+
+header{
+    height: 15vh;
+    background-image: url("http://th08.deviantart.net/fs70/PRE/f/2010/190/b/2/Disney_Characters_by_Ficklestix.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 70%;
+    margin-bottom: 15px;
+}
+
+.header-box{
+    text-align: center;
+}
+
+.subhead{
+    color: whitesmoke;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+input{
+    margin: 10px;
+}
+
+button{
+   background-color: black;
+   color: lightblue;
+   margin-left: 22px;
+   font-weight: bolder;
+   font-size: 30px;
+}
+
+.char-box{
+    height: 30vh;
+    border: solid 2px whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+
+}
+
+.title{
+    top: 0;
+    width: 100%;
+    color: whitesmoke;
+}
+
+.desc{
+    bottom: 0;
+    width: 100%;
+    color: whitesmoke;
+}
+
+.footer{
+    background-image: url("http://th08.deviantart.net/fs70/PRE/f/2010/190/b/2/Disney_Characters_by_Ficklestix.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 60%;
+    height: 10vh;
+    text-align: center;
+    
+}
+

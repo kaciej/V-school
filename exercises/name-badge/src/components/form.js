@@ -6,32 +6,39 @@ class Form extends React.Component {
                 <div className="container makerBox">
                     <div className="row">
                         <div className="col-md-6 inputs">
-                            <input onChange={(e) => {this.props.handleChange(e)}} 
-                            name="firstName" type="text" placeholder="First Name"/>
+                            <input onChange={(event) => {this.props.handleChange("firstName", event)}} 
+                            name="firstName" type="text" placeholder="First Name"
+                            value={this.props.inputValue.firstName}/> 
                         </div>
                         <div className="col-md-6 inputs">
-                            <input onChange={(e) => {this.props.handleChange(e)}} 
-                            name="email" type="text" placeholder="Email"/>
+                            <input onChange={(event) => {this.props.handleChange("email", event)}} 
+                            name="email" type="text" placeholder="Email"
+                            value={this.props.inputValue.email}/>
                         </div>
                         <div className="col-md-6 inputs">
-                            <input onChange={(e) => {this.props.handleChange(e)}} 
-                            name="phone" type="text" placeholder="Phone"/>
+                            <input onChange={(event) => {this.props.handleChange("phone", event)}} 
+                            name="phoneNumber" type="text" placeholder="Phone"
+                            value={this.props.inputValue.phone}/>
                         </div>
                         <div className="col-md-6 inputs">
-                            <input onChange={(e) => {this.props.handleChange(e)}} 
-                            name="lastName" type="text" placeholder="Last Name"/>
+                            <input onChange={(event) => {this.props.handleChange("lastName", event)}} 
+                            name="lastName" type="text" placeholder="Last Name"
+                            value={this.props.inputValue.lastName}/>
                         </div>
                         <div className="col-md-6 inputs">
-                            <input onChange={(e) => {this.props.handleChange(e)}} 
-                            name="placeOfBirth" type="text" placeholder="Place of Birth"/>
+                            <input onChange={(event) => {this.props.handleChange("placeOfBirth", event)}} 
+                            type="text" placeholder="Place of Birth"
+                            value={this.props.inputValue.placeOfBirth}/>
                         </div>
                         <div className="col-md-6 inputs">
-                            <input onChange={(e) => {this.props.handleChange(e)}} 
-                            name="favFood" type="text" placeholder="Favorite Food"/>
+                            <input onChange={(event) => {this.props.handleChange("favFood", event)}} 
+                            type="text" placeholder="Favorite Food"
+                            value={this.props.inputValue.favFood}/>
                         </div>
                         <div className="col-md-8 col-md-offset-2">
-                            <input className="tellUsMore" onChange={(e) => {this.props.handleChange(e)}} 
-                            name="tellUsMore" type="text" placeholder="Tell us More"/>
+                            <textarea className="tellUsMore" onChange={(event) => {this.props.handleChange("tellUsMore", event)}} 
+                            type="text" placeholder="Tell us More"
+                            value={this.props.inputValue.tellUsMore}/>
                         </div>
                     </div>
                     <div className="submitDiv text-center">

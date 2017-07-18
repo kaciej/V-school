@@ -1,0 +1,60 @@
+import React from 'react';
+import Form from "../components/form.js";
+import autoBind from "react-autobind";
+
+//get 'connect' to connect react to the store
+import { connect } from "react-redux";
+
+//get 'bindActionCreators' to bind the 'this' to the store
+import { bindActionCreators } from "redux"
+
+//get all the actions and put them in a objuect called actionCreators
+import * as actionCreators from "../actions/index.js";
+
+class FormContainer extends React.Component {
+     constructor(){
+        super()
+        this.state = {
+            name1: "",
+            name2: "",
+            name3: ""
+        }
+        autoBind(this);
+    }
+    handleChange(key, event){
+        this.setState({
+            [key]: event.target.value
+        });
+    }
+    clearInputs(){
+        console.log("booger")
+        for(let key in this.state){
+            console.log(key);
+            this.setState({
+                [key]: ""
+            });
+        }
+    }
+    render() {
+        return (
+            <div>
+                <Form clearInputs={this.clearInputs}
+                handleChange={this.handleChange}
+                handleSubmit={this.props.pickName}
+                info={this.state}/>
+            </div>
+        );
+    }
+}
+
+    //tell redux how to connext the state to component via props
+    const mapStateToProps = (state) => {
+        return state
+    }
+    //tell it how to turn actions into functions that can be called in react via props
+    const mapDispatchToProps = (dispatch) => {
+        return bindActionCreators(actionCreators, dispatch);
+    }
+
+export default connect(mapStateToProps, mapDispatchToProps)(FormContainer);
+

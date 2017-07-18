@@ -12,17 +12,15 @@ class BadgeContainer extends React.Component {
         }
         autoBind(this);
     }
-    handleChange(event){
+    handleChange(key, event){
         let inputValue = {
             ...this.state.inputValue
         }
-        console.log(event.target.name);
-        inputValue[event.target.name] = event.target.value;
+        inputValue[key] = event.target.value;
         this.setState({
             ...this.state,
             inputValue: inputValue
         })
-        console.log(inputValue);
     }
     handleSubmit(){
         let newBadge={...this.state.inputValue}
@@ -43,7 +41,9 @@ class BadgeContainer extends React.Component {
     render() {
         return (
             <div>
-                <Form handleChange= {this.handleChange} handleSubmit={this.handleSubmit}/>
+                <Form inputValue={this.state.inputValue} 
+                handleChange= {this.handleChange} 
+                handleSubmit={this.handleSubmit}/>
                 <BadgeList badges={this.state.badges}/>
             </div>
         );

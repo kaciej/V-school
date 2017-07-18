@@ -1,0 +1,62 @@
+.wrapper{
+    min-height: 100vh;
+    margin-bottom: -10vh;
+}
+
+.container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.head{
+    font-size: 40px;
+    background-color: lightseagreen !important;
+}
+
+header {
+    font-size: 40px;
+    background-color: lightseagreen !important;
+}
+
+input{  
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button{
+    border-radius: 3px;
+    background-color: lightseagreen;
+}
+
+.meme{
+    height: 60vh;
+    /*width: 100%;*/
+    border: solid 2px black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px gray;
+    position: relative;
+}
+
+.top-text{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.bottom-text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer{
+    background-color: lightseagreen;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+.bottom{
+    margin-bottom: 10vh;
+}

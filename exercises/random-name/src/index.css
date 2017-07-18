@@ -1,0 +1,22 @@
+header{
+    font-size: 42px;
+}
+
+.custom-header{
+    background-color: olivedrab;
+    margin-bottom: 75px;
+}
+
+input{
+    border-radius: 5px;
+    width: 300px;
+}
+
+button{
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.input-row{
+    margin-bottom: 40px;
+}
