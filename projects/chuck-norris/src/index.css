@@ -1,0 +1,17 @@
+body{
+    background-image: url("https://www.theplace2.ru/archive/chuck_norris/img/Chuck-Norris_9.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+}
+
+button{
+    border-radius: 6px;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    font-size: 20px;
+}
+
+h1{
+    color: white;
+}

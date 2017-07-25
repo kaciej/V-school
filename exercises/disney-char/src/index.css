@@ -7,7 +7,7 @@ body{
 }
 
 header{
-    height: 15vh;
+    padding: 60px 0px 60px 0;
     background-image: url("http://th08.deviantart.net/fs70/PRE/f/2010/190/b/2/Disney_Characters_by_Ficklestix.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,10 +30,10 @@ input{
     margin: 10px;
 }
 
-button{
-   background-color: black;
-   color: lightblue;
-   margin-left: 22px;
+.btn{
+   background-color: hotpink;
+   color: black;
+   margin-left: 25px;
    font-weight: bolder;
    font-size: 30px;
 }
@@ -44,19 +44,39 @@ button{
     background-size: cover;
     background-repeat: no-repeat;
     color: whitesmoke;
-
+    position: relative;
 }
 
 .title{
     top: 0;
     width: 100%;
     color: whitesmoke;
+    margin-bottom: 0;
 }
 
 .desc{
     bottom: 0;
     width: 100%;
     color: whitesmoke;
+    margin-bottom: 0;
+}
+
+.delete{
+    background-color: hotpink;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    border: none;
+    font-weight: bolder;
+}
+
+.pencil{
+    color: hotpink;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .footer{

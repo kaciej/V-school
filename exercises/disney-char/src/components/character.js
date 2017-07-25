@@ -1,14 +1,26 @@
 import React from 'react';
+import FontAwesome from "react-fontawesome";
 
 class Character extends React.Component {
     render() {
         return (
             <div className="col-md-6 text-center">
-                <h3 className="title">{this.props.title}Woody</h3>
+                <h3 className="title">{this.props.item.title}</h3>
                 <div className="char-box text-center"
-                style= {{backgroundImage: `url(https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-20810-10n7ovy_9b42e613.jpeg)`}}>
+                style= {{backgroundImage: `url(${this.props.item.url})`}}>
+                <button className="delete" onClick={() => {this.props.handleRemove(this.props.index)}}>X</button>
+                <FontAwesome className="pencil" name="pencil-square" size="2x"/>
                 </div>
-                    <h5 className="desc">{this.props.desc}Best Buddy</h5>
+                    <h5 className="desc">{this.props.item.desc}</h5>
+                    
+                    <div>
+                    <input />
+                    <input />
+                    <input />>
+                    <button>Save</button>
+                    </div>
+                    
+                    
             </div>
         );
     }

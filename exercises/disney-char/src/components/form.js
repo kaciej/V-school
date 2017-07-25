@@ -21,7 +21,9 @@ class Form extends React.Component {
                 </div>
                 <div className="row">
                     <div className="col-md-12">
-                        <button className="btn">Add To the List</button>
+                        <button onClick={() => {this.props.handleClick(this.props.info);
+                            this.props.clearInputs();
+                            }}className="btn">Add To the List</button>
                     </div>
                 </div>
             </div>

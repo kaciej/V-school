@@ -27,9 +27,7 @@ class FormContainer extends React.Component {
         });
     }
     clearInputs(){
-        console.log("booger")
         for(let key in this.state){
-            console.log(key);
             this.setState({
                 [key]: ""
             });
