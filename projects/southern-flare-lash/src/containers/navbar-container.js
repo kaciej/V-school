@@ -13,8 +13,9 @@ let myLinks = [
     link: "http://www.robin-williams.net/plays.php"
   },
   {
-    text: "PRICING",
-    link: "http://www.robin-williams.net/filmography.php"
+    text: "BRAND",
+    link: "http://www.robin-williams.net/filmography.php",
+    to: "/"
   },
   {
     text: "GALLERY",
@@ -22,7 +23,8 @@ let myLinks = [
   },
   {
     text: "CONTACT US",
-    link: "#contact"
+    link: "#contact",
+    to: "/contact"
   }
  ];
 let brand = "Sothern Flare Lash"

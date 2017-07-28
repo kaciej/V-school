@@ -1,0 +1,93 @@
+body{
+    font-family: 'Hind', sans-serif;
+}
+
+.nav{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.nav-brand{
+    padding: 20px;
+    font-size: 24px;
+}
+
+.nav-links{
+    color: black !important;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.brand{
+    height: 70vh;
+    background-image: url("https://ucarecdn.com/112752a4-a101-4c6c-85dc-9a019758b27a/-/stretch/off/-/resize/3000x/-/quality/normal/");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-box{
+    background-color:darkgrey;
+    height: 45vh;
+    position: relative;
+    margin: 15px 15px 15px 15px;
+
+}
+
+.contact-us{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+
+.schedule a{
+    color: white !important;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.map-marker{
+    display: inline;
+}
+
+.address{
+    display: inline;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+.map{
+    height: 34vh;
+}
+
+.marker{
+    color:red;
+}
+
+.blog-title{
+    margin-bottom: 70px;
+}
+
+.blog-subtitle{
+    margin-bottom: 5vh;
+}
+
+.blog{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+footer{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.icons{
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}

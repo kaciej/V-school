@@ -7,12 +7,14 @@ import Footer from "./components/footer.js";
 import ContactUsContainer from "./containers/contact-us-container.js";
 import Brand from "./components/brand.js";
 
-//get the thing that provides store to you app
-import { Provider } from "react-redux";
+//router
+import {BrowserRouter, Route, Switch} from "react-router-dom";
 
-//get the thing that makes the store
-//and apply middleWare
-import { createStore, applyMiddleware } from "redux";
+//get the thing that provides store to you app
+import {Provider} from "react-redux";
+
+//get the thing that makes the store and apply middleWare
+import {createStore, applyMiddleware} from "redux";
 
 //get thunk
 import thunk from "redux-thunk";
@@ -26,16 +28,17 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <NavbarContainer />
+                <NavbarContainer/>
                 <div className="container-fluid">
-                    <Brand/>
-                    <ContactUsContainer />
+                    <Brand />
+                    <ContactUsContainer/>
                 </div>
-                <Footer />
+                <Footer/>
             </div>
         );
     }
 }
 
 //give it to the app through provider
-ReactDOM.render(<Provider store={store}><App /></Provider>, document.querySelector("#root"));
+ReactDOM.render(
+    <Provider store={store}><App/></Provider>, document.querySelector("#root"));

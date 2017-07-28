@@ -10,6 +10,9 @@ import {bindActionCreators} from "redux"
 //get all the actions and put them in a objuect called actionCreators
 import * as actionCreators from "../actions/";
 
+//router
+import {Link} from "react-router-dom";
+
 class ContactUsContainer extends Component {
     render() {
         console.log(this.props);

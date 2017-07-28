@@ -1,6 +1,6 @@
 let fizzBuzz = () => {
     let arr = [];
-    for(let i = 1; i <= 20; i++){
+    for(let i = 1; i <= 15; i++){
         if(i % 3 == 0 && i % 5 == 0){
             arr.push("FizzBuzz")
         }else if(i % 5 == 0){

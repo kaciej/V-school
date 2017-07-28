@@ -87,6 +87,7 @@ padding-left: 40px;
 .schedule a{
     color: white !important;
     font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .map-marker{

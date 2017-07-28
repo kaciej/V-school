@@ -5,7 +5,7 @@ class Brand extends Component {
         return (
             <div className="row">
                 <div className="col-md-12 brand">
-
+    
                 </div>      
             </div>
         );

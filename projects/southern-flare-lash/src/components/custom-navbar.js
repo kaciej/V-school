@@ -1,12 +1,13 @@
 import React from "react";
 import {Nav, Navbar, NavItem} from "react-bootstrap";
-// import NavItem from 'react-bootstrap';
+
+import {Link} from "react-router-dom";
 
 class CustomNavbar extends React.Component {
   render() {
     let myLinks = this.props.links.map((item) => {
       return (
-        <NavItem key={item.text} href={item.link}>{item.text}</NavItem>
+          <NavItem key={item.text}href={item.link}>{item.text}</NavItem>
       )
     })
     return (

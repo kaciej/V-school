@@ -25,6 +25,7 @@ let gameOfThreesLoop = (num) => {
     console.log(`You did it the number is ${num}`)
 }
 let userInput = readlineSync.question("Input any number: ");
+gameOfThree(Number(userInput));
 
 
 //done with recursion
