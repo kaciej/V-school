@@ -1,0 +1,44 @@
+body{
+    background-color: #222222;
+    color: white;
+}
+
+input{
+    border-radius: 6px;
+    padding: 5px;
+    margin: 10px;
+    color: black;
+}
+
+.add-btn{
+    border-radius: 6px;
+    background-color: teal;
+    font-weight: bolder;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.bucket-img{
+    width:100%;
+    height: 400px;
+    background-size: cover;
+    background-image: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.edit-inputs{
+    color: black !important;
+}
+
+p{
+    display: inline-block;
+    font-size: 26px;
+    margin: 15px;
+}
+
+.bucket-btns{
+    display: inline;
+    margin-bottom: 20px;
+}

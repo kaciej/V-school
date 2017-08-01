@@ -1,0 +1,17 @@
+{
+  "name": "todo-mongoose",
+  "version": "1.0.0",
+  "description": "This is my project using mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kacie Jacobson",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.5"
+  }
+}

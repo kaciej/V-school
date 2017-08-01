@@ -2,7 +2,7 @@ import axios from "axios";
 
 export function loadData() {
     return(dispatch) => {
-        axios.get("http://localHost:8080/").then((respose) => {
+        axios.get("d").then((respose) => {
             dispatch(getData(respose.data.data));
         }).catch((error) => {
             throw error;
