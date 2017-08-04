@@ -1,0 +1,191 @@
+body{
+    background-color: #FDFDF3;
+    color: black;
+    font-family: 'Special Elite', cursive;
+
+}
+/*NAVBAR*/
+.navbar{
+    line-height: 4;
+    background-color: transparent;
+    border-bottom-color: black;
+    margin-bottom: 0 !important;
+}
+
+.nav-title{
+    display: inline;
+    margin-left: 20px;
+    font-weight: bolder;
+    padding: 15px;
+}
+
+.nav-links{
+    display: inline;
+    float: right;
+    margin-right: 100px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6BAE7D !important;
+    text-decoration: none;
+}
+
+.nav-home{
+    padding: 15px;
+    color:black;
+}
+
+.nav-post{
+    padding: 15px;
+    color: black;
+    
+}
+
+/*HEADER*/
+.header-img{
+    background-image: url("http://jeremiahpeters.com/wp-content/uploads/2015/07/mountain-pasture_00450519.jpg");
+    background-image: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+    padding-top: 70px;
+    padding-bottom: 120px;
+    position: relative;
+    z-index: 1;
+}
+
+.header{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header-btn{
+    margin-bottom: 70px;
+    margin-top: 30px;
+    width: 160px;
+    font-size: 18px;
+    color: white;
+    background-color: #6BAE7D;
+    position: relative;
+    z-index: 2;
+}
+
+.header-title{
+    font-family: 'Satisfy', cursive;
+    font-size: 73px;
+    position: relative;
+    z-index: 2
+}
+
+.header-quote{
+    font-family: 'Special Elite', cursive;
+    position: relative;
+    z-index: 2;
+}
+
+/*BODY*/
+.body-container{
+    padding-top: 50px;
+}
+
+.home-imgs{
+    width:100%;
+    height: 25vh;
+    background-image: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.body-title{
+    font-size: 18px;
+}
+
+.posts{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.vote-btn{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+.body-current-vote{
+    display: inline;
+    margin: 10px;
+    font-size: 14;
+}
+
+.delete{
+    background-color: transparent;
+    color: red;
+    float: left;
+    border: none;
+}
+
+/*FORM*/
+.form-inputs{
+    margin: 20px;
+}
+
+.form-header{
+    margin-bottom: 50px;
+}
+
+.form-btn{
+    width: 200px;
+    font-size: 25px;
+    margin-bottom: 20vh;
+}
+
+/*POST*/
+.post-img{
+    width: 100%;
+    height: 45vh;
+    border-radius: 5px;
+    background-image: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.post-desc{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.add-comment-btn{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.post-current-vote{
+    font-size: 20px;
+}
+
+/*FOOTER*/
+footer{
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+}
+
+.icons{
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.comment-box{
+    color: black;
+}
+
+
+

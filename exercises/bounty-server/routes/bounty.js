@@ -5,6 +5,14 @@ let bountyRouter = express.Router();
 let Bounty = require("../models/bounty.js");
 
 //middleware to pull all queries in lowercase
+bountyRouter.use((req, res, next) => {
+    for(let key in req.query) {
+        if(typeof req.query[key] === "string") {
+            req.query[key] = req.query[key].toLowerCase();
+        }
+    }
+    next();
+});
 
 bountyRouter.get("/", (req, res) => {
     Bounty.find(req.query, (error, data) => {
