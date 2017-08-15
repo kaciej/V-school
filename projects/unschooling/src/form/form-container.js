@@ -12,6 +12,8 @@ class FormContainer extends Component {
             title: "",
             description: "",
             img: "",
+            subject: "",
+            age: ""
         }
         autoBind(this);
     }
@@ -31,6 +33,8 @@ class FormContainer extends Component {
             title: "",
             description: "",
             img: "",
+            subject: "",
+            age: ""
         })
     }
     render() {

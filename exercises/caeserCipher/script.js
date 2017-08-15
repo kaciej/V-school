@@ -48,9 +48,9 @@ for (var i = 0; i < str.length; i++) {
     } else {
         output += str[i];
     }
+    return output;
 }
-return output;
-}
+
 
 var encryptedStr = cipher("here is the phrase", 3);
 console.log(encryptedStr);

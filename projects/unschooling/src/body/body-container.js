@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import autoBind from "react-autobind";
 import Body from "./body.js";
 
 class BodyContainer extends Component {

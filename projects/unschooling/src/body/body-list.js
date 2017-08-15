@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import BodyContainer from "./body-container.js";
+import Footer from "../footer.js";
+import SearchContainer from "../search/search-container.js";
 
 class BodyList extends Component {
     genPost() {
         return this.props.posts.sort((a, b) => {
-            return (b.upVotes - b.downVotes) - (a.upVotes - a.downVotes);
+            return (b.upVotes - a.upVotes);
         }).map((item, index) => {
             return <BodyContainer key={index + item.title}
                        post={item}
@@ -16,12 +18,17 @@ class BodyList extends Component {
     render() {
         return (
             <center>
+                <div className="white-box">
+                <SearchContainer />
                 <div className="body-container container">   
-                    <div className="row">
+                    <div className=" row">
                     {this.genPost()}
                     </div>
-                </div>  
+                        <Footer /> 
+                </div> 
+                </div>
             </center>
+            
             
         );
     }

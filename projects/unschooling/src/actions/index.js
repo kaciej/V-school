@@ -10,6 +10,24 @@ export function loadData() {
     }
 }
 
+//Search Function
+export function loadDataByQuery(queryObj) {
+    let queryStr = "";
+    for(let key in queryObj) {
+        queryStr += key;
+        queryStr += "=";
+        queryStr += queryObj[key];
+        queryStr += "&"
+    }
+    return(dispatch) => {
+        axios.get(`http://localhost:8080/vote/${queryStr}`).then((response) => {
+            dispatch(loadData())
+        }).catch((error) => {
+            throw error;
+        });
+    }
+}
+
 export function deleteData(id) {
     return(dispatch) => {
         axios.delete(`http://localhost:8080/vote/${id}`).then((response) => {
@@ -30,6 +48,7 @@ export function addData(data) {
     }
 }
 
+//Put
 export function updateData(id, data) {
     return(dispatch) => {
         axios.put(`http://localhost:8080/vote/${id}`, data).then((response) => {
@@ -40,6 +59,7 @@ export function updateData(id, data) {
     }
 }
 
+//Votes
 export function updateUp(id) {
     return(dispatch) => {
         axios.put(`http://localhost:8080/vote/upVote/${id}`).then((response) => {
@@ -72,17 +92,50 @@ export function loadDataById(id) {
     }
 }
 
-export function comment(id, comment) {
+//Comments
+export function loadCommentsById(id) {
     return(dispatch) => {
-        axios.put(`http://localhost:8080/vote/comment/${id}`, {comment}).then((response) => {
-            dispatch(loadData());
-            dispatch(loadDataById(id));
+        axios.get(`http://localhost:8080/comment/?voteId=${id}`).then((response) => {
+            dispatch(setComments(response.data.data));
         }).catch((error) => {
-            throw error;
+            return error;
         });
     }
 }
 
+export function addComment(id, data) {
+    return(dispatch) => {
+        axios.post(`http://localhost:8080/comment/?voteId=${id}`, data).then((response) => {
+            dispatch(loadCommentsById(id))
+        }).catch((error) => {
+            return error;
+        });
+    }
+}
+
+export function deleteCommentById(commentId, postId) {
+    return(dispatch) => {
+        axios.delete(`http://localhost:8080/comment/${commentId}`).then((response) => {
+            dispatch(loadCommentsById(postId));
+        }).catch((error) => {
+            return error;
+        });
+    }
+}
+
+export function updateComment(postId, id, data) {
+    return(dispatch) => {
+        axios.put(`http://localhost:8080/comment/${id}`, data).then((response) => {
+            dispatch(loadCommentsById(postId));
+        }).catch((error) => {
+            return error;
+        });
+    }
+}
+
+
+
+//To Reducer
 function setData (data) {
     return {
         type: "SET_DATA",
@@ -93,6 +146,13 @@ function setData (data) {
 function setCurrentPost (data) {
     return {
         type: "CURRENT_POST",
+        data
+    }
+}
+
+function setComments (data) {
+    return {
+        type: "SET_COMMENT",
         data
     }
 }

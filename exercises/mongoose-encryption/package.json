@@ -1,0 +1,15 @@
+{
+  "name": "mongoose-encryption",
+  "version": "1.0.0",
+  "description": "A mongoose model example with encryption",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kacie Jacobson",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.11.6",
+    "readline-sync": "^1.4.7"
+  }
+}

@@ -19,7 +19,14 @@ let voteSchema = new Schema({
         type: Number,
         default: 0
     },
-    comments: [String]
+    subject: {
+        type: String,
+        required: false
+    },
+    age: {
+        type: String,
+        required: false
+    }
 });
 
 module.exports = mongoose.model("voteItem", voteSchema);

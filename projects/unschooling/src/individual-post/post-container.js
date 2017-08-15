@@ -3,33 +3,18 @@ import Post from "./post.js";
 
 import {connect} from "react-redux";
 import * as actionCreators from "../actions/";
-import autoBind from "react-autobind"
 
 class PostContainer extends Component {
-    constructor() {
-        super();
-        this.state = {
-            comment: ""
-        };
-        autoBind(this);
-    }
     componentWillMount() {
-        this.props.loadDataById(this.props.match.params.id)
-    }
-    handleComment(event) {
-        this.setState({
-            comment: event.target.value
-        });
+        this.props.loadDataById(this.props.match.params.id);
     }
     render() {
-        
         return (
             <div className="container">
-                <Post handleComment={this.handleComment} 
-                    input={this.state}
+                <Post 
                     currentPost={this.props.currentPost}
-                    addComment={this.props.comment}
                     updateUp={this.props.updateUp}
+                    id={this.props.match.params.id}
                     updateDown={this.props.updateDown}
                     />
             </div>

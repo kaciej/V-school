@@ -3,14 +3,14 @@ import ReactDOM from "react-dom";
 import "./index.css";
 
 //router
-import  {Route, BrowserRouter, Switch, Link} from "react-router-dom";
+import  { Route, BrowserRouter, Switch } from "react-router-dom";
 
 //import components
 import FormContainer from "./form/form-container.js";
 import PostContainer from "./individual-post/post-container.js";
 import Home from "./home.js"
 import Navbar from "./navbar.js";
-import Footer from "./footer.js";
+import Scroll from "./scroll.js";
 
 //the thing that provides store to your app
 import { Provider } from "react-redux";
@@ -30,19 +30,18 @@ const store = createStore(reducers, applyMiddleware(thunk));
 class App extends Component {
     render() {
         return (
-            <div>
-            <BrowserRouter>
-                <div>
+        <BrowserRouter>
+            <Scroll>
+                <div className="app-wrapper">
                     <Navbar />
                         <Switch>
                             <Route exact path= "/" component={Home} />
                             <Route exact path= "/form" component={FormContainer}/>
                             <Route exact path= "/:id" component={PostContainer}/>
                         </Switch>
-                    <Footer />
                 </div>
-            </BrowserRouter> 
-            </div>
+            </Scroll>  
+        </BrowserRouter> 
         );
     }
 }

@@ -1,67 +1,35 @@
 import React, {Component} from 'react';
 import FontAwesome from "react-fontawesome";
 
+import CommentFormContainer from "../comments/comment-form/comment-form-container";
+import CommentListContainer from "../comments/comment-list-container.js";
+import Footer from "../footer.js";
+
 class Post extends Component {
-    genComments() {
-        return this
-            .props
-            .currentPost
-            .comments
-            .map((item, index) => {
-                return (
-                    <p key={item + index}>{item}</p>
-                )
-            })
-    }
     render() {
         return (
-            <div className='text-center'>
+            <div>
+            <div className="post-wrapper text-center">
                 <h1 className="post-title">{this.props.currentPost.title}</h1>
                 <div className="row">
-                    <div
-                        className="post-img col-md-8"
-                        style={{
-                        backgroundImage: `url("${this.props.currentPost.img}")`
-                        }}>
+                    <div className="post-img"style={{backgroundImage: `url("${this.props.currentPost.img}")`}}>
+                        <div className="overlay">
+                        <button onClick={() => {this.props.updateUp(this.props.currentPost._id)}}
+                            className="post-heart-btn">
+                            <FontAwesome name="heart" size="3x"/>
+                        </button>
+                        <div className="post-current-vote">{this.props.currentPost.upVotes}</div>
+                        </div>
                     </div>
-                    <div className="post-desc row">{this.props.currentPost.description}</div>
                 </div>
-                <textarea
-                    cols="50" rows="5"
-                    className="post-comment-box"
-                    placeholder="Write a Comment..."
-                    onChange={(event) => {
-                    this
-                        .props
-                        .handleComment(event)
-                }}
-                    value={this.props.input.comment}></textarea>
-            <div>
-                <button
-                    className="add-comment-btn btn btn-success" 
-                    onClick={() => {
-                    this
-                        .props
-                        .addComment(this.props.currentPost._id, this.props.input.comment)
-                }}>
-                    Post</button>
-            </div>
-                
-                <div>{this.genComments()}</div>
-
-                <button
-                    onClick={() => {
-                    this
-                        .props
-                        .updateUp(this.props.currentPost._id)
-                }}
-                    className="vote-btns">
-                    <FontAwesome name="heart" size="2x"/>
-                </button>
-
-                <div className="post-current-vote">{this.props.currentPost.upVotes}</div>
-
-            </div>
+                <div className="row">
+                    <div className="col-md-6 post-desc">{this.props.currentPost.description}</div>
+                </div>
+                <CommentFormContainer id={this.props.id}/>
+                </div>
+                <CommentListContainer id={this.props.id}/>
+                <Footer />
+        </div>
         );
     }
 }

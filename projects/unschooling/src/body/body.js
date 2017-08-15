@@ -19,7 +19,7 @@ class Body extends Component {
 
                 <button onClick={() => {this.props.updateUp(this.props.post._id)}}
                      className="vote-btn">
-                    <FontAwesome name="heart" size="1x"/>
+                    <FontAwesome name="heart" size="lg"/>
                 </button>
 
                 <div className="body-current-vote">{this.props.post.upVotes}</div>
